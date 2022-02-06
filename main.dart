@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:practice/popupMenu.dart/menu.dart';
-import 'package:practice/rangeSLider/rangeSlider.dart';
+import 'package:practice/pageView_pageController.dart/viewController.dart';
 
 void main() {
   runApp(Home());
@@ -11,7 +10,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // home: popupDialogue(),
-      home: rangeSLider(), // you can call any function here.
+      home: viewController(), // you can call any function here.
       debugShowCheckedModeBanner: false,
     );
   }
