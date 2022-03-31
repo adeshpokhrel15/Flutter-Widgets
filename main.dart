@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:practice/Cupertino%20Segmented/cupertino.dart';
+import 'package:practice/Neumorphism%20buttom/button.dart';
 
 void main() {
   runApp(Home());
@@ -10,7 +11,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // home: popupDialogue(),
-      home: cupertinoCont(), // you can call any function here.
+      home: neuButtom(), // you can call any function here.
       debugShowCheckedModeBanner: false,
     );
   }
