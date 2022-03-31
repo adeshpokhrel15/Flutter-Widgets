@@ -12,23 +12,26 @@ class _neuButtomState extends State<neuButtom> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Container(
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              color: Colors.orange,
-              boxShadow: [
-                BoxShadow(
-                  blurRadius: 30.0,
-                  offset: Offset(-30, -30),
-                  color: Colors.orangeAccent,
-                ),
-                BoxShadow(
-                  blurRadius: 30.0,
-                  offset: Offset(30, 30),
-                  color: Colors.orangeAccent,
-                ),
-              ]),
-          child: SizedBox(height: 200, width: 200),
+        child: GestureDetector(
+          onTap: () => setState(() => isPressed = !isPressed),
+          child: Container(
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                color: Colors.orange,
+                boxShadow: [
+                  BoxShadow(
+                    blurRadius: 30.0,
+                    offset: Offset(-30, -30),
+                    color: Colors.orangeAccent,
+                  ),
+                  BoxShadow(
+                    blurRadius: 30.0,
+                    offset: Offset(30, 30),
+                    color: Colors.orangeAccent,
+                  ),
+                ]),
+            child: SizedBox(height: 200, width: 200),
+          ),
         ),
       ),
     );
