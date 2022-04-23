@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:practice/Cupertino%20Segmented/cupertino.dart';
-import 'package:practice/Neumorphism%20buttom/button.dart';
-import 'package:practice/drag%20and%20drop/dnd.dart';
+import 'package:practice/Aspect%20ration/ar.dart';
 
 void main() {
   runApp(Home());
@@ -12,7 +10,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // home: popupDialogue(),
-      home: dNd(), // you can call any function here.
+      home: aspectRatio(), // you can call any function here.
       debugShowCheckedModeBanner: false,
     );
   }
