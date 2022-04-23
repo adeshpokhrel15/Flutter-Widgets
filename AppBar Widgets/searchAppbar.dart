@@ -12,7 +12,7 @@ class searchAppBar extends StatelessWidget {
             IconButton(
               icon: Icon(Icons.search),
               onPressed: () {
-                showSearch(context: context, delegate: MySearchDelegate());
+                showSearch(context: context, delegate: //MySearchDelegate());
               },
             )
           ],
@@ -22,7 +22,3 @@ class searchAppBar extends StatelessWidget {
   }
 }
 
-class MySearchDelegate extends SearchDelegate {
-  @override
-  Widget? buildLeading(BuildContext context) => Container();
-}
