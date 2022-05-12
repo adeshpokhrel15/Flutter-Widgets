@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practice/ToDo/dialogWidget.dart';
 
 class todoApp extends StatefulWidget {
   @override
@@ -43,9 +44,10 @@ class _todoAppState extends State<todoApp> {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         onPressed: () => showDialog(
           context: context,
-          builder: (context) => popupDialogue(),
+          builder: (context) => dialogWidget(),
           barrierDismissible: false,
         ),
+        child: Icon(Icons.add),
       ),
     );
   }
